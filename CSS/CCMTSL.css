@@ -1,0 +1,936 @@
+ 
+/*Html Size*/
+html{
+    font-size: 60.5%;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+    
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+    
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    .fa-youtube {
+      background: #bb0000;
+      color: white;
+    }
+    
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+    
+
+ 
+/*Font fanily*/
+*{
+    font-family: 'Open Sans', sans-serif;
+     margin: 0; padding: 0;
+     box-sizing: border-box;
+     text-transform: none;
+     outline: none;
+     transition: all .2s cubic-bezier(.37, 1.14,.26, 1.24) ;
+}
+
+ 
+
+/*First header*/
+header .header-1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: hsl(40, 100%, 3%);
+    padding: 1rem 2rem;
+}
+
+/*First header Logo icon*/
+header .header-1 .logo{
+    font-size: 2.5rem;
+    color:rgb(189, 184, 184);
+} 
+
+/*First header call icon*/
+header .header-1 .cell{
+     font-size: 2rem;
+     color:chocolate;
+}
+
+
+/*Second header*/
+header .header-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+     background: black;
+    padding: .5rem;
+    
+}
+ 
+.box a :hover{
+  color: red;
+  background: white;
+  text-decoration: none;
+}
+ 
+ 
+/*Heading*/
+.heading{
+    text-align: center;
+    width: 90% ;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+.heading span{
+    display: inline-block;
+    font-size: 3.5rem;
+    color:blue;
+    padding: 1rem 0;
+    box-shadow:blue;
+
+}
+
+/*Menu Bar*/
+ 
+  
+.topnav {
+    overflow: hidden;
+    background-color: bla;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: blue;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+ 
+/*home*/
+.home{
+    display: flex;
+    align-items: center;     
+}
+
+/*home content*/
+.home .content{
+    text-align: center;
+    padding: 1rem;
+}
+
+ 
+ 
+   /*Menu button on home page*/
+ .btn{
+    height: 5rem;
+    width: 18rem;
+    color: white;
+    outline-offset: .8rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: solid black;
+    }
+    button{
+      width: 20%;
+      font-size: 150%;
+     
+    }
+    .btn :hover{
+   outline-offset: .4rem;
+   background: red;
+
+    }
+
+/*media Queries*/
+@media(max-width:768px){
+     .home .content h1{
+        font: size 5rem;
+    }
+    .home .content p{
+        width: auto;
+    }
+     
+     
+}
+
+
+@media(max-width:768px){
+    html{
+         font-size: 50%;   
+    }
+    header .header-1{
+        flex-flow: column;
+
+    }
+    header .header-1 .logo{
+        padding-bottom: 1rem;
+    }
+
+}
+
+/*About*/
+.about{
+    min-height: 100vh;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .2rem;
+    overflow-x: hidden;
+}
+.about .row .image img{
+    width: 100%;
+    font-size: 30rem  ;
+    filter: drop-shadow(.5rem .5rem .5rem blue);
+
+}
+
+.about .row .content{
+   padding: 1rem;     
+}
+.about .row .content h3{
+    font-size: 3.5rem;
+    color:blue;      
+}
+.about .row .content p{
+    font-size: 2rem;
+    color: rgb(146, 148, 139);  
+    padding: 1rem 0;    
+}
+.about .row .content .btn{
+    color:blue;
+    border-color:blue;
+    outline-color: blue;
+}
+.about .row .content .btn :hover{
+    color: white;
+}
+
+.dish{
+    min-height: 100vh;
+
+}
+.dish .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    list-style: none;
+}
+.dish .controls .buttons{
+    margin: 1rem 2em;
+    padding: 5rem 0;
+    border-bottom: solid blue;
+    color:  #333;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.dish .controls .buttons .button-active,
+.dish .controls .buttons :hover{
+color: blue;
+border-color: blue;
+}
+.dish .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+.dish .image-container .image{
+    width: 35rem;
+    margin: 2rem;
+    border: 1rem solid white;
+    box-shadow: blue
+    ;
+
+}
+.dish .image-container .image img{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+.dish .image-container .image a{
+    font-size: 2rem;
+    color: black;
+    padding: .5rem;
+}
+.dish .image-container .image a :hover{
+    color:blue;
+    text-decoration: underline;
+}
+
+
+/*Our Team*/
+ 
+.team .heading span{
+    color: blue;
+}
+ .team .box-container{
+     display:flex ;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     padding: 2rem 0;
+ }
+ .team .box-container .box{
+     height: 40rem;
+     width: 28rem;
+     margin: 2rem;
+     border:  solid #790548;
+     box-shadow: 0 .5rem 1rem #b2b9a9;
+     position: relative;
+  
+ }
+ .team .box-container .box img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
+ .team .box-container .box .info{
+     position: absolute;
+     bottom: -6rem; left: 0;
+     width: 100%;
+     background: white;
+     border-top: .5rem solid rgb(176, 203, 226);
+     text-align: center;
+ }
+ .team .box-container .box :hover .info{
+     bottom: 0rem;
+
+ }
+ .team .box-container .box .info h3{
+     font-size: 2rem;
+     color: black;
+     padding: .5rem 0;
+ }
+ .team .box-container .box .info span{
+     font-size: 1.5rem;
+     color: blue;
+}
+ .team .box-container .box .info .share{
+     margin-top: 1rem;
+     border-top: 1rem solid black;
+     padding: 1rem;
+}
+.team .box-container .box .info .share a{
+    font-size: 2rem;
+    margin: 1rem;
+    color: blue;
+}
+.team .box-container .box .info .share a :hover{
+    color: rgb(8, 8, 8);
+
+}
+ 
+
+/* footer*/
+ .footer{
+     background: rgb(12, 12, 12);
+ }
+ .footer .box-container{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+ .footer .box-container .box{
+     flex: 1 1 23rem;
+     margin: 2rem;
+ }
+ .footer .box-container .box .heading{
+     margin: 0; padding: 0;
+     box-sizing: 0 .2rem .50rem black;
+     margin-bottom: .5rem;
+     text-align: left;
+ }
+ .footer .box-container .box .heading span{
+     font-size: 2.5rem;
+     color: white;
+ }
+ .footer .box-container{
+     font-size: 1.7rem;
+     color: #eee;
+     padding: 1rem 0;
+ }
+ .footer .box-container .box:first-child p{
+     font-size: 1.4rem;
+ }
+ .footer .box-container .box p i{
+     padding: 0 .5rem;
+     color:#fff
+ }
+ .footer .box-container .box a{
+     font-size: 1.7rem;
+     padding: 5rem 0;
+     color: #eee;
+ }
+ .footer .box-container .box a :hover{
+     text-decoration: underline;
+ }
+ .footer .credit{
+     font-size: 2rem;
+     text-align: center;
+     padding: 2rem 1rem;
+     color: #fff;
+     border-top: 1rem solid grey;
+ }
+ .footer .credit span{
+     color: blue;
+ }
+
+
+ 
+   /*online oder*/
+  #output {
+    background-color: #c5edf3;
+    color: #463c39;
+    font-size: 17px;
+    padding: 30px 30px;
+    width: 40%;
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+#newPublish {
+    background-color: #c5edf3;
+    color: #463c39;
+    font-size: 17px;
+    padding: 30px 30px;
+    width: 40%;
+    font-family: sans-serif;
+    line-height: 1.8;
+}
+ 
+#details_info {
+    background-color: #f7f7f7;
+    color: #463c39;
+    font-size: 17px;
+    padding: 30px 30px;
+    width: 40%;
+    border: 1px solid #cccccc;
+    font-family: sans-serif;
+    line-height: 1.8;
+    margin-left: 90px;
+}
+.box3 {
+    margin-top: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 60px;
+    padding: 40px 50px;
+    background-color: gainsboro;
+}
+.box11 {
+    margin-top: 80px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 60px;
+    padding: 40px 50px;
+    background-color: gainsboro;
+    line-height: 2.5;
+}
+.web_design_box {
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
+    padding: 40px 50px;
+    background-color: #d9edf7;
+    
+}
+.hotel_reserve_box {
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
+    padding: 40px 50px;
+    background-color: #c6badc;
+    box-shadow: 3px 5px 10px #7527b0;
+}
+.online_food_delivery_box {
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
+    padding: 20px 40px;
+    box-shadow: 3px 5px 10px blue;
+}
+.result_box {
+    margin-top: 15%;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 60px;
+    padding: 20px 40px;
+    background-color: #d4c0b9;
+ 
+}
+.result_box_text {
+    color: #232222;
+    font-size: 20px;
+    text-align: center;
+    padding-top:10px;
+}
+.result_box_text span {
+    color: blue;
+    font-size: 26px;
+    text-align: center;
+}
+
+.Order{
+     
+    
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}  
+
+
+
+
+
+
+
+
+
+ /*Contact*/ 
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color:blue;
+  }
+
+
+  
+  /* Style the container/contact section */
+  .container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+/*Slideshow*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: flex;}
+img {
+    vertical-align: middle;
+}
+
+
+ /*Menu Style*/
+ .h1 {
+    font-family: 'Londrina Shadow', cursive;
+    text-align: center;
+    font-size: 75px;
+    color: blue;
+    margin: 60px 0 0 0;
+  }
+  .h2 {
+    text-align: center;
+    color: #bbbbbb;
+    margin: 0px 0 70px 0;
+  }
+  
+  /* Main Body */
+  .body{
+    background: #232323;
+  }
+  .sec {
+    font-family: helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 600px;
+    background: #232323;
+  }
+  .first {
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  .second {
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  .three{
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  .four{
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  .five{
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  
+  .six{
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  .seven{
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  .eight{
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  .nine{
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  .ten{
+    height: 200px;
+    background-size: cover;
+    position: relative;
+    margin: 40px 0 0 0;
+    border-radius: 12px;
+  }
+  .p {
+    color: rgba(255,255,255,1);
+    background: black;
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    padding: 10px;
+    line-height: 28px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: 30px;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+  }
+  
+  .big {
+    opacity: 0;
+  }
+  
+  .show-description .p {
+    height: 150px;
+  }
+  
+  .show-description .big {
+    opacity: 1;
+  }
+  
+  /* Classes & IDs */
+  
+  .first{
+    background-image: url("../Images/cans\ in\ fridge.jpg");
+  }
+  .second{
+    background-image: url("../Images/chiek.jpg");
+  }
+  .three{
+    background-image: url("../Images/crystal-clear-water.jpg");
+  }
+  .four{
+    background-image: url("../Images/rice\ and\ crain.jpg");
+  }
+  .five{
+    background-image: url("../Images/44.jpg");
+  }
+  .six{
+    background-image: url("../Images/foofoo11.jpg");
+  }
+  .seven{
+    background-image: url("../Images/CASSAVA\ LEAF.jpg");
+  }
+  .eight{
+    background-image: url("../Images/ACHACKEH.jpg");
+  }
+  .nine{
+    background-image: url("../Images/food.jpg");
+  }
+  .ten{
+    background-image: url("../Images/food.jpg");
+  }
+  .price {
+    float: right;
+  }
+  
+  /* Media Queries */
+  
+  @media (max-width: 500px) {
+    .h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      line-height: 40px;
+    }
+    .h2 {
+      font-size: 20px;
+      margin: 20px 0 30px 0;
+    }
+    .first {
+      margin: 20px 12px 0 12px;
+    }
+    .second {
+      margin: 20px 12px 0 12px;
+    }
+    .three {
+      margin: 20px 12px 0 12px;
+    }
+    .four{
+      margin: 20px 12px 0 12px;
+    }
+    .five{
+      margin: 20px 12px 0 12px;
+    }
+    .six{
+      margin: 20px 12px 0 12px;
+    }
+
+    .seven{
+      margin: 20px 12px 0 12px;
+    }
+    .eight{
+      margin: 20px 12px 0 12px;
+    }
+    .nine{
+      margin: 20px 12px 0 12px;
+    }
+    .ten{
+      margin: 20px 12px 0 12px;
+    }
+    .p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .big {
+      font-size: 16px;
+    }
+  }
+  .abu{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+  }
+  .nya{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+  }
+
+  .lam{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: chocolate;
+  }
+  .upper{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: rgb(250, 250, 250)
+  }
+  .vk{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .cup{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .man{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .men{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .one{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .two{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .xman{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .hyh{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .bot{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .fat{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .fun{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: chocolate;
+  }
+  .bat{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+  .bet{
+    font-size: 200;
+    position: sticky;
+    padding: 1%;
+    color: black
+  }
+ 
+ 
+  
+  .Order{
+    background-color: rgb(126, 226, 165);
+  }
+  

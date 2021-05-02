@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCMT/SL CANTEEN</title>
+    <!--Font size-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/CCMTSL.css">
+    
+</head>
+<body class="Order" >
+     <!--Header Section Starts-->
+
+     <header>
+
+        <div class="header-1">
+            <a href="#" class="logo"> <i class="fas fa-utensils"> </i>CCMT/SL CANTEEN ONLINE FOOD ORDERING</a>
+            <h3 class="cell"><i class="fas fa-phone">Call now: Call now: +232 77 294 295/ 030 111 222</i></h3>
+          </div>
+          <div class="header-2">
+            <img width="80px" src=" Images/ccmtsl.png" alt="">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" >Home</a>
+                <a href="Menu.html" >Menu</a>
+                <a href="Gallery.html">Our Dishes</a>
+                <a href="Online  Oder.html" class="active">Online Oder</a>
+                <a href="Chef.html">Chef</a>
+                <a href="About.html">About</a>
+               <a href="Team.html"> Team</a>
+               <a href="Contact.html"  >Contact</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
+         </header>
+
+    <!--Header Section Ends-->
+    <div class="online_food_delivery_box animated bounceInDown" id="input_box">
+        <h3> Online Food Delivery Form </h3><br>
+        <form>
+            <div class="form-group">
+                <select class="form-control" id="food_item" onchange="finalCost()">
+                    <option value="0"> Select Food Item ... </option>
+                    <option value="O"> AFRICAN DISH </option>
+                    <option value="2">Rice and Cassava Leaf</option>
+                    <option value="30"> Rice and Potato Leaf </option>
+                    <option value="40">  Rice and Crain-Crain </option>
+                    <option value="50">Rice and soup  </option>
+                    <option value="60"> Rice and  stew </option>
+                    <option value="70"> Foo-Foo </option>
+                </select>
+            </div><br>
+            <div class="form-group">
+                <select class="form-control" id="special_item" onchange="finalCost()">
+                    <option value="0"> Want Special Item ?</option>
+                    <option value="2"> Yes </option>
+                    <option value="0"> No </option>
+                </select>
+            </div><br>
+            <div class="form-group">
+                <input type="number" class="form-control" id="food_quantity" placeholder="Quantity" onkeyup="finalCost()" >
+            </div><br>
+            <div class="form-group">
+                <select class="form-control" id="delivery_type" onchange="finalCost()">
+                    <option value="0"> Delivery Type - </option>
+                    <option value="0"> Normal </option>
+                    <option value="2"> Emergency </option>
+                </select>
+            </div><br>
+            <div class="form-group">
+                <select class="form-control" id="delivery_area" onchange="finalCost()">
+                    <option value="0"> Select Delivery Area ... </option>
+                    <option value="1"> Hostel Resident  </option>
+                    <option value="2"> Lecturers’ Resident  </option>
+                    <option value="3"> Penner Building  </option>
+                    <option value="4">New Building  </option>
+                    <option value="5"> Mile 91 Town  </option>
+                    <option value="6"> Bo Town  </option>
+                    <option value="7">Kenema Town</option>
+                    <option value="8">Makeni Town </option>
+                    <option value="9">Free Town </option>
+                    <option value="10">Kono Town</option>
+                </select>
+            </div><br>
+
+            <div class="form-group">
+                <select class="form-control" id="delivery_area" onchange="finalCost()">
+                    <option value="0"> Payment Through </option>
+                    <option value="1"> Orange Money  </option>
+                    <option value="2"> Africell Money </option>
+                  
+                </select>
+            </div>
+            <div class="form-group">
+                <label style="color: black ;">Total Cost (Le) : </label>
+                <span id="result" style="background-color: #8c7269;color: #fff;padding: 6px 70px;font-weight: 600;font-size: 18px; margin-left: 10px;border-radius: 5px;">0</span>
+                <input type="button" value="SUBMIT" class="btn btn-primary" style="color: red;" style="float: right" id="ok" onclick="ok_result()">
+            </div>
+        </form>
+    </div>
+
+    <div class="result_box animated zoomIn" style="display: none;" id="okResult">
+        <h3 class="result_box_text" id="ok_text"> Your order is successfully submitted. Please keep patience, we will come to you soon.<br><br><span> --  Thank You  -- </span></h3><br>
+    </div>
+    <!-- footer Section stars-->
+ <section class="footer">
+    <div class=" box-container">
+      
+     
+        
+        <div class="box" >
+            <h3 class="heading"><span style="color: chocolate;">Contact us</span></h3>
+            <a href=" "><p><i class="fas fa-map-marker-alt"></i>  1 SILICON HILL MILE 91</p></a>
+           <a href="nyakehlamina9@gmail.com"> <p><i class="fas fa-envelope"></i> ccmtslcanteen1@gmail.com </p></a>
+           <a href=""> <p><i class="fas fa-globe"></i> www.ccmtslcanteen.com</p></a>
+           <a href=""> <p><i class="fas fa-phone"></i>+232 77 294 295/+232 75 751 192 </p></a>
+  
+        </div>
+  
+        <div class="box" style="color: chocolate;">
+          <H3 >  Link To Page </H3>
+          <a href="index.html"><p style="color: blue;"><i class=""></i> Home</p></a>
+         <a href="Menu.html"> <p style="color: blue;"><i class=""></i>  Menu</p></a>
+         <a href="Gallery.html"> <p style="color: blue;"><i class=""></i> Our Dishes </p></a>
+         <a href="Online  Oder.html"><p style="color: blue;"><i class=""></i> Online Oder</p></a>
+         <a href="Chef.html"> <p style="color: blue;"><i class=""></i>  Chef</p></a>
+         <a href="About.html"> <p style="color: blue;"><i class=""></i>  About</p></a>
+         <a href="Team.html"> <p style="color: blue;"><i class=""></i>Team</p></a>
+         <a href="Contact.html"> <p style="color: blue;"><i class=""></i>Contact</p></a>
+      </div>
+        
+        <div class="box">
+          <h3 class="heading"><span style="color: chocolate">Location</span></h3>
+         <p>1 Silicon Hill Mile 91</p>
+         <p>Tonkolili District, Nort East Region. </p>
+         <p>Sierra Leone.</p>
+  
+      </div>
+  
+      
+      <div class="box">
+        <h3 class="heading"><span style="color: chocolate;">Follow us:</span></h3>
+        <a href="https://facebook.com  "><p style="color: #3B5998;"> <big><b  class="fab fa-facebook-f">   facebook</b></big></p></a>
+        <a href="https://www.youtube.com/ "><p style="color:  #bb0000;"> <big><b class="fab fa-youtube">Youtube</b></big></p></a>
+        <a href="https://www.instagram.com/ "><p style="color: #125688"> <big><b class="fab fa-instagram">Instagram</b></big></p></a>
+        <a href=" https://twitter.com/?lang=en"><p style="color: #55ACEE"> <big><b class="fab fa-twitter">Twitter</b></big></p></a>
+          
+          
+          
+      </div>
+    </div>
+    
+    
+  
+  </section>
+  
+  <!--footer Section Ends-->
+  <script src="Js/main.JS"></script> 
+ 
+</body>
+</html>
